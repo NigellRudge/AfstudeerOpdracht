@@ -19,9 +19,9 @@ class Road:
         return str(self.__class__) +  " : " + str(self.__dict__)
     
     def carDriveUp(self, car_number):
-        #time.sleep(1)
+        time.sleep(1)
         print("car " + str(car_number + 1) +" now driving")
-        #time.sleep(0.5)
+        time.sleep(0.5)
     
     def setImage(self, image_path):
         self.image_src = image_path

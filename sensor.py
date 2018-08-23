@@ -49,15 +49,15 @@ class Sensor:
                 [self.detection_boxes, self.detection_scores, self.detection_classes, self.num_detections],
                 feed_dict={self.image_tensor: frame_expanded})
                 
-        vis_util.visualize_boxes_and_labels_on_image_array(
-            resized_frame,
-            np.squeeze(boxes),
-            np.squeeze(classes).astype(np.int32),
-            np.squeeze(scores),
-            self.category_index,
-            use_normalized_coordinates=True,
-            line_thickness=8,
-            min_score_thresh=0.80)
+        # vis_util.visualize_boxes_and_labels_on_image_array(
+        #     resized_frame,
+        #     np.squeeze(boxes),
+        #     np.squeeze(classes).astype(np.int32),
+        #     np.squeeze(scores),
+        #     self.category_index,
+        #     use_normalized_coordinates=True,
+        #     line_thickness=8,
+        #     min_score_thresh=0.80)
             
         # cv2.imshow(Road.name,resized_frame)
         # cv2.waitKey(0)
